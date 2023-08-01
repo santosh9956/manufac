@@ -1,4 +1,4 @@
-#Here is the Output of this project & <a href={'https://manufuc-site.netlify.app/'} target="_blank" > final link </a>  - 
+#Here is the Output of this project &  final link : https://manufuc-site.netlify.app/  - 
 <img width="1077" alt="Screenshot 2023-08-01 at 11 14 58 PM" src="https://github.com/santosh9956/manufac/assets/76210120/61ea81bc-af1a-482f-88e5-f049ac884967">
 
 
