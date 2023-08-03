@@ -1,5 +1,6 @@
 #Here is the Output of this project &  final link : https://manufuc-site.netlify.app/  - 
-<img width="1077" alt="Screenshot 2023-08-01 at 11 14 58 PM" src="https://github.com/santosh9956/manufac/assets/76210120/61ea81bc-af1a-482f-88e5-f049ac884967">
+<img width="1678" alt="Screenshot 2023-08-03 at 11 14 04 AM" src="https://github.com/santosh9956/manufuc/assets/76210120/1cb4c96d-fc90-4c32-9b2d-e829d204d39e">
+
 
 
 # Getting Started with Create React App
