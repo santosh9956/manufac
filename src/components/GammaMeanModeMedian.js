@@ -13,15 +13,16 @@ const GammaMeanModeMedian = (props) => {
         acc[item.Alcohol] = [];
         }
         const gamma = (item.Ash * item.Hue) / item.Magnesium;
-        acc[item.Alcohol].push(gamma);
+        acc[item.Alcohol].push(Number(gamma.toFixed(3)));
         return acc;
     }, {});
 
     const results = Object.keys(groupedData).map((key) => {
-        const magnesiumValues = groupedData[key];
-        const mean = findMean(magnesiumValues);
-        const mode = findMode(magnesiumValues);
-        const median = findMedian(magnesiumValues);
+        const gammaValues = groupedData[key];
+        console.log(gammaValues, 'magnesiumValue');
+        const mean = findMean(gammaValues);
+        const mode = findMode(gammaValues);
+        const median = findMedian(gammaValues);
 
         return {
         alcohol: key,

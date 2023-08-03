@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const TabularData = (props) => {
     const {results, tableTitle}  = props;
@@ -12,14 +12,17 @@ const TabularData = (props) => {
                         <tr className="font_bold">{tableTitle} Median</tr>
                     </thead>
                     <tbody className="d_flex">
-                        {results.map((result) => (
-                            <div key={result.alcohol}>
-                                <tr className="font_bold">{`Class ${result.alcohol}` }</tr>
-                                <tr>{result.mean.toFixed(3)}</tr>
-                                <tr>{result.mode.join(", ")}</tr>
-                                <tr>{result.median.toFixed(3)}</tr>
-                            </div>
-                        ))}
+                        {results.map((result) => {
+                            return (
+                        
+                                <div key={result.alcohol}>
+                                    <tr className="font_bold">{`Class ${result.alcohol}` }</tr>
+                                    <tr>{result.mean.toFixed(3)}</tr>
+                                    <tr>{result.mode}</tr>
+                                    <tr>{result.median.toFixed(3)}</tr>
+                                </div>
+                            )
+                        } )}
                     </tbody>
                 </table>
         </>

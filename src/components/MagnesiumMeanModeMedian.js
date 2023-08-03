@@ -7,19 +7,19 @@ const MagnesiumMeanModeMedian = (props) => {
     const { data } = props;
 
     const groupedData = data.reduce((acc, item) => {
-        // console.log(item, 'item-----');
         if (!acc[item.Alcohol]) {
             acc[item.Alcohol] = [];
         }
-        acc[item.Alcohol].push(item.Magnesium);
+        const falavanoids = item.Flavanoids;
+        acc[item.Alcohol].push(Number(falavanoids.toFixed(3)));
         return acc;
     }, {});
 
     const results = Object.keys(groupedData).map((key) => {
-        const magnesiumValues = groupedData[key];
-        const mean = findMean(magnesiumValues);
-        const mode = findMode(magnesiumValues);
-        const median = findMedian(magnesiumValues);
+        const flavanoidsValues = groupedData[key];
+        const mean = findMean(flavanoidsValues);
+        const mode = findMode(flavanoidsValues);
+        const median = findMedian(flavanoidsValues);
 
         return {
             alcohol: key,
